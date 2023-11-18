@@ -1,0 +1,35 @@
+:host {
+  &:not(:last-child) {
+    li {
+      margin-bottom: 0.5rem;
+    }
+  }
+}
+
+li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.4rem;
+  padding: 1rem;
+  cursor: pointer;
+  border-radius: 0.5rem;
+  border: 1px solid;
+  h3 {
+    margin: 0;
+    font-size: 1rem;
+    margin-right: auto;
+  }
+  span {
+    display: inline-block;
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 50%;
+    border: 1px solid
+      oklch(from var(--secondary-color-accent) calc(l + 5) c calc(h + 40));
+  }
+
+  &:hover {
+    background: var(--secondary-color-accent);
+  }
+}

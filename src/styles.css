@@ -10,6 +10,8 @@
 
   --primary-color: oklch(97.94% 0.04 103);
   --secondary-color: oklch(54.31% 0.1 195);
+
+  --secondary-color-accent: oklch(from var(--secondary-color) calc(l + 40) c calc(h - 15));
 }
 
 body {

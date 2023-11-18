@@ -1,4 +1,5 @@
 export interface Palette {
-  primaryColor: string;
+  name: string;
+  primaryColor: string,
   secondaryColor: string;
 }

@@ -1,0 +1,22 @@
+<section class="app-colors">
+  <section>
+    <h2>Dark Theme Colors</h2>
+    @for (palette of darkThemes; track $index) {
+    <app-color-palette-item [palette]="palette" />
+    }
+  </section>
+  <section>
+    <h2>Light Theme Colors</h2>
+    @for (palette of lightThemes; track $index) {
+    <app-color-palette-item [palette]="palette" />
+    }
+  </section>
+  <section>
+    <h2>High Contrast Colors</h2>
+    <ul>
+      @for (palette of highContrastThemes; track $index) {
+      <app-color-palette-item [palette]="palette" />
+      }
+    </ul>
+  </section>
+</section>
