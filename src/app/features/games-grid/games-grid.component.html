@@ -1,3 +1,10 @@
 <main appMainLayout>
-  <app-game-tile></app-game-tile>
+  <section>
+    <h2>Mind Games</h2>
+    <div>
+      @for(game of mindGames; track game.name) {
+      <app-game-tile [game]="game"></app-game-tile>
+      }
+    </div>
+  </section>
 </main>
