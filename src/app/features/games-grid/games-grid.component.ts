@@ -17,7 +17,8 @@ export class GamesGridComponent {
   mindGames: Game[] = [
     {
       name: 'Match Pairs',
-      description: "A 'match pairs' game involves flipping cards to find matching pairs within a grid."
+      description: "A 'match pairs' game involves flipping cards to find matching pairs within a grid.",
+      href: 'match-pairs'
     }
   ];;
 }

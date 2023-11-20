@@ -8,9 +8,17 @@ export const routes: Routes = [
     component: GamesGridComponent,
   },
   {
+    path: 'match-pairs',
+    loadComponent: () =>
+      import('./features/match-pairs/match-pairs.component').then(
+        (c) => c.MatchPairsComponent
+      ),
+  },
+  {
     path: 'settings',
-    loadComponent: () => import(
-      './features/platform-settings/platform-settings.component'
-    ).then((c) => c.PlatformSettingsComponent),
+    loadComponent: () =>
+      import('./features/platform-settings/platform-settings.component').then(
+        (c) => c.PlatformSettingsComponent
+      ),
   },
 ];
