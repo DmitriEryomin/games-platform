@@ -4,12 +4,11 @@ import { CommonModule } from '@angular/common';
 import { GameTileComponent } from './ui';
 import { Game } from './interfaces';
 
-import { MainLayoutDirective } from '@directives/main-layout.directive';
 
 @Component({
   selector: 'app-games-grid',
   standalone: true,
-  imports: [CommonModule, GameTileComponent, MainLayoutDirective],
+  imports: [CommonModule, GameTileComponent],
   templateUrl: './games-grid.component.html',
   styleUrl: './games-grid.component.css'
 })

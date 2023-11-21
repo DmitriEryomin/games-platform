@@ -1,0 +1,45 @@
+.game-layout {
+  height: calc(100dvh - 3.5rem);
+  padding: 1rem;
+  overflow: hidden;
+  display: grid;
+  gap: 1rem;
+  grid-template: auto / minmax(300px, 20%) 1fr;
+}
+
+@media screen and (max-width: 1024px) {
+  .game-layout {
+    grid-template: 1fr minmax(150px, 25%) / auto;
+
+    .game {
+      grid-row: 1;
+    }
+  }
+}
+
+.game {
+  color: var(--secondary-color);
+  padding: 0.5rem;
+  border: 2px solid;
+  border-radius: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.details {
+  color: var(--secondary-color);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  gap: 1rem;
+  h2 {
+    margin: 0;
+  }
+  p {
+    margin: 0;
+    overflow: auto;
+    text-align: justify;
+    line-height: 1.5rem;
+  }
+}
