@@ -3,7 +3,7 @@
   height: auto;
   gap: 1rem;
   display: grid;
-  grid-template: repeat(3, 16vmax) / repeat(4, 12vmax);
+  grid-template: repeat(3, 15rem) / repeat(4, 12rem);
 }
 
 .item {
