@@ -2,7 +2,7 @@ import { Component, inject } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterOutlet } from '@angular/router';
 
-import { HeaderComponent } from '@ui/organisms';
+import { HeaderComponent } from '@ui/organisms/header/header.component';
 import { PaletteService } from '@services/palette-service';
 
 @Component({
