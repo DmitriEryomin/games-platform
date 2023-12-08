@@ -55,6 +55,7 @@ export class MatchPairsGameService {
 
     if (this.flippedItem === null) {
       this.flippedItem = currentItem;
+      this.items.update((items) => [...items]);
     } else if (this.flippedItem.name !== currentItem.name) {
       this.runningTask = true;
       setTimeout(() => {
@@ -62,14 +63,14 @@ export class MatchPairsGameService {
         currentItem.flipped = false;
         this.flippedItem = null;
         this.runningTask = false;
+        this.items.update((items) => [...items]);
       }, flipBackTimeout);
     } else {
       this.flippedItem.solved = true;
       currentItem.solved = true;
       this.flippedItem = null;
+      this.items.update((items) => [...items]);
     }
-
-    this.items.update((items) => [...items]);
   }
 
   private createPairs() {
